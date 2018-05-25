@@ -41,13 +41,3 @@ class LinkedList():
             if current.next.value == value:
                 current.next = current.next.next
             current = current.next
-
-a = LinkedList()
-a.append(1)
-print(a.count)
-a.append(2)
-print(a.count)
-a.prepend(3)
-print(a.count)
-a.deleteWithValue(2)
-print(a.count)
