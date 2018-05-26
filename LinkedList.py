@@ -36,8 +36,16 @@ class LinkedList():
             return
 
         current = self.head
-        print(self.head.value)
         while current.next != None:
             if current.next.value == value:
                 current.next = current.next.next
             current = current.next
+
+a = LinkedList()
+a.append(1)
+a.append(2)
+a.prepend(3)
+a.deleteWithValue(3)
+print(a.head.value)
+a.deleteWithValue(1)
+print(a.head.value)
