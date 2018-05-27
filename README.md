@@ -1,6 +1,6 @@
 # python-adventures
 
-Projects Completed:
+# Projects Completed:
 
 Linked List
 
