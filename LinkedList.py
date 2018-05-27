@@ -1,11 +1,24 @@
 class Node():
+    """
+    Creates a representation of a Node, which is a single element in the Linked List. Each Node instance has a value and a reference 
+    pointing to another Node.
+    """
     
     def __init__(self, value):
         self.value = value
         self.next = None
 
 class LinkedList():
-
+    """
+    Creates a representation of a Linked List, a linear data structure without a physical sequential order. It is composed of nodes (elements) 
+    that have both a value and a reference, the latter pointing to another element.
+    
+    length(): Returns an integer length of the linked list
+    append(value): Adds value to the end of the linked list, setting the current last node's reference to the new value
+    prepend(value): Adds value to the start of the linked list, setting its reference to the current first node
+    deleteWithValue(value): Deletes value from the linked list
+    
+    """
     def __init__(self):
         self.head = None
         self.count = 0
