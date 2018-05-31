@@ -5,3 +5,5 @@
 Linked List
 
 Queue
+
+Stack
