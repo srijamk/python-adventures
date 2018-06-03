@@ -62,7 +62,6 @@ class LinkedList:
                 current.next = current.next.next
             current = current.next
 
-
 #a = LinkedList()
 #a.append(1)
 #a.append(2)
