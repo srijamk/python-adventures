@@ -26,13 +26,11 @@ class LinkedList:
     def __init__(self):
         self.head = None
         self.count = 0
-        self.linkedlist = []
-
+        
     def length(self):
         return self.count
 
     def append(self, value):
-        self.linkedlist.append(value)
         self.count += 1
         if self.head == None:
             self.head = Node(value)
@@ -44,14 +42,12 @@ class LinkedList:
         current.next = Node(value)
 
     def prepend(self, value):
-        self.linkedlist.insert(0, value)
         self.count += 1
         new_head = Node(value)
         new_head.next = self.head
         self.head = new_head
 
     def deleteWithValue(self, value):
-        self.linkedlist.remove(value)
         self.count -= 1
         if self.head == None:
             return
@@ -62,6 +58,14 @@ class LinkedList:
                 current.next = current.next.next
             current = current.next
 
+    def linked_list(self):
+        l = self.head
+        rtn = []
+        while l != None:
+            rtn.append(l.value)
+            l = l.next
+        return rtn
+    
 #a = LinkedList()
 #a.append(1)
 #a.append(2)
