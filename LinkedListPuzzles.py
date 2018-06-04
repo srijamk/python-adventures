@@ -47,10 +47,18 @@ def removeKthFromLast(k, l):
         
     return l.linked_list()
 
+def deleteMiddleNode(l, node):
+    node.value = node.next.value
+    node.next = node.next.next
+    return l.linked_list()
+    
+
 l = LinkedList()
 l.append(1)
 l.append(2)
 l.append(3)
+
 # print(removeDupsWithBuffer(l))
 # print(removeDupsWithoutBuffer(l))
 print(removeKthFromLast(1, l))
+print(l.deleteWithValue(2))

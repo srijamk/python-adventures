@@ -57,6 +57,7 @@ class LinkedList:
             if current.next.value == value:
                 current.next = current.next.next
             current = current.next
+        return self.linked_list()
 
     def linked_list(self):
         l = self.head
