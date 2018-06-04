@@ -18,15 +18,12 @@ def removeDupsWithBuffer(l):
 
 
 def removeDupsWithoutBuffer(l):
-    print(len(l.linked_list()))
     first_pointer = l.head
     second_pointer = first_pointer.next
     while first_pointer != second_pointer and first_pointer.next != None:
 
         while second_pointer != None:
-            print(first_pointer.value, second_pointer.value)
             if first_pointer.value == second_pointer.value:
-                print("hi")
                 l.deleteWithValue(second_pointer.value)
             second_pointer = second_pointer.next
 
@@ -36,18 +33,15 @@ def removeDupsWithoutBuffer(l):
 
 def removeKthFromLast(k, l):
     index = len(l.linked_list()) - k
-    print(index)
     pointer = l.head
     count = 0
     while count < len(l.linked_list()):
         if count + 1 == index:
-            print(pointer.value, pointer.next.value)
             if pointer.next.next != None:
                 pointer.next = pointer.next.next
                 pointer.next.next = None
             else:
                 pointer.next = None
-            print(pointer.value, pointer.next.value)
             break
         count += 1
         
