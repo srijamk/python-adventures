@@ -60,7 +60,6 @@ def pedigrees():
                 d = dups * int(math.factorial(num_nodes) / (math.factorial(num_nodes - n) * math.factorial(n)))
                 
                 if total_nodes + n * 2 <= nodes and h + 1 <= height:
-                    #print([total_nodes + n * 2, h + 1, n * 2, d], num_nodes)
                     new_list.append([total_nodes + n * 2, h + 1, n * 2, d])
             s.pop()
             for lst in new_list:
