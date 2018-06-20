@@ -2,10 +2,12 @@
 
 ## Projects Completed:
 
-Linked List
+> Linked List
 
-Queue
+> Queue
 
-Stack
+> Stack
 
-Heap
+> Heap
+
+> Hash Table
