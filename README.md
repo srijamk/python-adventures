@@ -7,3 +7,4 @@
 - Stack
 - Heap
 - Hash Table
+- Priority Queue
