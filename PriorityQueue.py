@@ -68,7 +68,7 @@ class PriorityQueue:
     def heapifyUp(self):
         index = self.size - 1
         while self.hasParent(index) and self.parent(index).priority > self.items[index].priority:
-            swap(index, self.getParentIndex(index))
+            self.swap(index, self.getParentIndex(index))
             index = self.getParentIndex(index)
 
     def heapifyDown(self):
@@ -80,7 +80,7 @@ class PriorityQueue:
             if self.items[index].priority < self.items[smallerChildIndex].priority:
                 break
             else:
-                swap(smallerChildIndex, index)
+                self.swap(smallerChildIndex, index)
             index = smallerChildIndex
 
     def printItems(self):
@@ -91,10 +91,12 @@ class PriorityQueue:
 
 a = Node(1, "a")
 b = Node(2, "b")
+d = Node(5, "d")
 c = Node(3, "c")
 P = PriorityQueue()
 P.add(a)
 P.add(c)
+P.add(d)
 P.add(b)
 P.printItems()
 
