@@ -8,3 +8,4 @@
 - Heap
 - Hash Table
 - Priority Queue
+- Trie
