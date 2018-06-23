@@ -9,3 +9,4 @@
 - Hash Table
 - Priority Queue
 - Trie
+- Binary Search Tree
