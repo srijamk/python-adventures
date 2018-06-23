@@ -1,8 +1,4 @@
-"""
-ID: srijamk1
-LANG: PYTHON3
-TASK: nocows
-"""
+
 import math
 
 content = open('nocows.in').read()
