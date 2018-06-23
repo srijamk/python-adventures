@@ -2,6 +2,7 @@
 
 ## Projects Completed:
 
+### Data Structures
 - Linked List
 - Queue
 - Stack
@@ -10,3 +11,5 @@
 - Priority Queue
 - Trie
 - Binary Search Tree
+### Dynamic Programming
+- Fibonacci
