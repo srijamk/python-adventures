@@ -15,4 +15,5 @@
 - Fibonacci
 - Levenshtein Distance
 - Longest Common Subsequence
+- Longest Common Substring
 
