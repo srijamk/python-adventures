@@ -16,4 +16,5 @@
 - Levenshtein Distance
 - Longest Common Subsequence
 - Longest Common Substring
+- Longest Increasing Subsequence
 
