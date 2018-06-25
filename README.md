@@ -14,3 +14,5 @@
 ### Dynamic Programming
 - Fibonacci
 - Levenshtein Distance
+- Longest Common Subsequence
+
