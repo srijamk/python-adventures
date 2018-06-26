@@ -18,4 +18,5 @@
 - Longest Common Substring
 - Longest Increasing Subsequence
 - Shortest Common Supersequence
+- Zero/One Knapsack
 
