@@ -19,4 +19,6 @@
 - Longest Increasing Subsequence
 - Shortest Common Supersequence
 - Zero/One Knapsack
+- Bounded Knapsack
+
 
