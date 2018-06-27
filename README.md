@@ -20,5 +20,6 @@
 - Shortest Common Supersequence
 - Zero/One Knapsack
 - Bounded Knapsack
+- Unbounded Knapsack
 - Number Partitions
 
