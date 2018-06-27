@@ -21,12 +21,17 @@ class BoundedKnapsack:
 		for row in range(len(dp)):
 			remainder = row + 1
 			for col in range(len(dp[0])):
+
 				if weight_arr[col] <= remainder:
+					add = (remainder / weight_arr[col])
+					if add > item_bound:
+						add = item_bound
+
 					if col == 0:
-						dp[row][col] = (remainder / weight_arr[col]) * value_arr[col]
+						dp[row][col] = add * value_arr[col]
 					else:
-						dp[row][col] = dp[row][col - 1] + (remainder / weight_arr[col]) * value_arr[col]
-					remainder -= (remainder / weight_arr[col]) * weight_arr	[col]
+						dp[row][col] = dp[row][col - 1] + add * value_arr[col]
+					remainder -= add * weight_arr[col]
 				elif col != 0:
 					dp[row][col] = dp[row][col - 1]
 				highest_value = max(highest_value, dp[row][col])
