@@ -20,5 +20,5 @@
 - Shortest Common Supersequence
 - Zero/One Knapsack
 - Bounded Knapsack
-
+- Number Partitions
 
