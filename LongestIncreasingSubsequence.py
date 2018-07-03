@@ -20,5 +20,3 @@ class LongestIncreasingSubsequence:
 
 L = LongestIncreasingSubsequence()
 print(L.longest_increasing_subsequence([3, 4, -1, 0, 6, 2, 3]))
-
-		
