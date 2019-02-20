@@ -22,4 +22,6 @@
 - Bounded Knapsack
 - Unbounded Knapsack
 - Number Partitions
-
+### Graphs
+- Calculate reachability between two points
+- Calculate # of connected components
